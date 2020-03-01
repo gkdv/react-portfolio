@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import Image from './Image'
 import AboutText from './AboutText'
+import Footer from './Footer'
 
 export class AboutMe extends Component {
     render() {
         return (
-            <div className="row" style={style}>
-                <Image />
-                <AboutText />
-            </div>
+            <>
+                <div className="row" style={style}>
+                    <Image />
+                    <AboutText />
+                </div>
+                <Footer />
+            </>
         )
     }
 }

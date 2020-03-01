@@ -8,16 +8,24 @@ import './App.css'
 
 
 function App() {
+  state = {
+    cards: [{
+      src: " ",
+      alt: " ",
+      cardTitle: " ",
+      cardText: " "
+    }]
+  }
   return (
     <Router>
       <div >
-        <Route exact path='/' render={ () => 
+        <Route exact path='/' render={() =>
           <React.Fragment>
             <Navbar />
             <AboutMe />
           </React.Fragment>
         } />
-        <Route path='/portfolio' component={Portfolio} />
+        <Route path='/portfolio' component={Portfolio} cards={this.state.cards}/>
         <Route path='/contact' component={Contact} />
 
       </div>
