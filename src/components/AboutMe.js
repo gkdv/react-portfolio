@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import Image from './Image'
+import AboutText from './AboutText'
 
 export class AboutMe extends Component {
     render() {
         return (
-            <div>
+            <div className="row" style={style}>
                 <Image />
                 <AboutText />
             </div>
@@ -11,4 +13,7 @@ export class AboutMe extends Component {
     }
 }
 
+const style = {
+    padding: '15% 30% 20%'
+}
 export default AboutMe
