@@ -8,7 +8,6 @@ export class Navbar extends Component {
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand" href="#">Garrett Krage</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -17,6 +16,7 @@ export class Navbar extends Component {
                             <a className="nav-item nav-link" href="/">About Me<span className="sr-only">(current)</span></a>
                             <a className="nav-item nav-link" href="/portfolio">Portfolio</a>
                             <a className="nav-item nav-link" href="/contact">Contact</a>
+
                         </div>
                     </div>
                 </nav>
@@ -25,6 +25,5 @@ export class Navbar extends Component {
     }
 }
 
-//Photo by Joanna Kosinska on Unsplash
 
 export default Navbar

@@ -15,7 +15,7 @@ export class Footer extends Component {
 const style = {
     position: 'fixed',
     bottom: '0px',
-    width: '100%',
+    width: '100%'
 }
 
 export default Footer

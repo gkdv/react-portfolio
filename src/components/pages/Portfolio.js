@@ -5,10 +5,11 @@ import PortCards from '../PortCards'
 
 export class Portfolio extends Component {
     render() {
+        
         return (
             <div>
                 <Navbar />
-                <PortCards cards={this.props.cards}/>
+                <PortCards />
                 <Footer />
             </div>
         )

@@ -1,22 +1,43 @@
 import React, { Component } from 'react'
 import Card from './Card'
 
+
+
 export class PortCards extends Component {
     render() {
-        state = {
-            card: [{
-                src: " ",
-                alt: " ",
-                cardTitle: " ",
-                cardText: " "
-            }]
-        }
+
         return (
-            <div>
-                <Card card={
-                    this.state.card.src = 'https://picsum.photos/200',
-                    this.state.card.alt = 'picture goes'
-                } />
+            <div className='row' style={style}>
+                <Card cardInfo={{
+                    src: 'https://picsum.photos/200', 
+                    alt: 'project photo', 
+                    cardTitle: 'pizza', 
+                    cardText: 'sauce'
+                }}/>
+                <Card cardInfo={{
+                    src: 'https://picsum.photos/200', 
+                    alt: 'project photo', 
+                    cardTitle: 'pizza', 
+                    cardText: 'sauce'
+                }}/>
+                <Card cardInfo={{
+                    src: 'https://picsum.photos/200', 
+                    alt: 'project photo', 
+                    cardTitle: 'pizza', 
+                    cardText: 'sauce'
+                }}/>
+                <Card cardInfo={{
+                    src: 'https://picsum.photos/200', 
+                    alt: 'project photo', 
+                    cardTitle: 'pizza', 
+                    cardText: 'sauce'
+                }}/>
+                <Card cardInfo={{
+                    src: 'https://picsum.photos/200', 
+                    alt: 'project photo', 
+                    cardTitle: 'pizza', 
+                    cardText: 'sauce'
+                }}/>
 
             </div>
 
@@ -24,4 +45,10 @@ export class PortCards extends Component {
     }
 }
 
+const style = {
+    display: 'flex',
+    justifyContent: 'center',
+    paddingBottom: '5%'
+    
+}
 export default PortCards
